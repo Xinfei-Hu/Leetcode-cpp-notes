@@ -1,11 +1,9 @@
-#include "add.h"
-#include "sub.h"
 #include <iostream>
 using namespace std;
 
-void test_add();
+void test_0001();
 
 int main(){
-    test_add();
+    test_0001();
     return 0;
 }

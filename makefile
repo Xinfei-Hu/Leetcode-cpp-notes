@@ -1,7 +1,7 @@
 CXX = g++
 
 # 编译参数
-CXXFLAGS = -Wall -Iinclude -g
+CXXFLAGS = -Wall -I. -g
 
 # 编译文件输出目录
 TARGET_DIR = build
@@ -12,9 +12,10 @@ TARGET = $(TARGET_DIR)/app
 all: app
 
 SRCS = src/main.cpp \
-	src/utils/add.cpp\
-	src/utils/sub.cpp\
-	tests/test_add.cpp
+	src/0009-isPalindrome/isPalindrome.cpp \
+	src/0001-twoSum/twoSum.cpp \
+	tests/test_0009.cpp \
+	tests/test_0001.cpp
 
 OBJS = $(patsubst %.cpp, $(TARGET_DIR)/%.o, $(SRCS))
 
